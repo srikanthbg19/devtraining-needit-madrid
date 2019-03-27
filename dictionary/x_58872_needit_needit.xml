@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Custom Description" max_length="40" name="custom_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" max_length="40" name="request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="HR" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Legal" sequence="1" value="legal"/>
+                <element inactive_on_update="false" label="Facilities" sequence="2" value="facilities"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed?" max_length="40" name="what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Other" sequence="0" value="other"/>
+            </choice>
+        </element>
     </element>
 </database>
