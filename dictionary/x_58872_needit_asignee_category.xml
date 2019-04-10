@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Asignee Category" max_length="40" name="x_58872_needit_asignee_category" type="collection">
+        <element choice="3" display="true" label="Assignee" max_length="32" name="assignee" reference="sys_user" type="reference">
+            <choice/>
+        </element>
+        <element label="Category name" max_length="40" name="category_name" type="string"/>
+        <index name="index">
+            <element name="assignee"/>
+        </index>
+    </element>
+</database>
